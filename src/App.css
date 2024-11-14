@@ -18,7 +18,35 @@
   background-color: theme('colors.primary');
 }
 
- /* ========================== */
+/* ========================== */
+
+.SecondBtn{
+  position: relative;
+}
+
+.SecondBtn:before {
+  content: "[";
+  font-size: 22px;
+  left: -10px;
+  position: absolute;
+  top: 5px;
+  transition: .3s;
+}
+.SecondBtn:hover:before {
+  left: -5px;
+}
+
+.SecondBtn:after {
+  content: "]";
+  font-size: 22px;
+  position: absolute;
+  right: -10px;
+  top: 5px;
+  transition: .3s;
+}
+.SecondBtn:hover:after {
+  right: -5px;
+}
 
 
 
