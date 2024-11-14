@@ -1,0 +1,95 @@
+
+/* SCROLL BAR */
+/* ========================== */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: theme('colors.primary');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.primary');
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: theme('colors.primary');
+}
+
+ /* ========================== */
+
+
+
+  @font-face {
+    font-family: "PPSupplyMono-Regular";
+    src: local("PPSupplyMono-Regular"),
+      url("./assets/fonts/PPSupplyMono-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "PPNeueBit-Regular";
+    src: local("PPNeueBit-Regular"),
+      url("./assets/fonts/PPNeueBit-Regular.ttf") format("truetype");
+  }
+
+body{
+    background: #000;
+    overflow-x: hidden;
+}
+
+button, p, span, a{
+    font-family: "PPNeueBit-Regular", sans-serif;
+  }
+  
+h3,h4{
+  font-family: "PPSupplyMono-Regular", sans-serif;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-blink {
+  animation: blink 2s ease-in-out infinite;
+}
+
+
+
+/* TopNavbar.css */
+
+/* Custom animation for continuous right-to-left movement */
+@keyframes moveBar {
+    0% {
+      transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End at the left */
+    }
+  }
+  
+  /* Add custom animation to Tailwind using animation classes */
+  .moving-bar-container {
+    animation: moveBar 10s linear infinite; /* Continuously move the bar */
+  }
+  
+  /* Optional: Apply hover effect to pause animation */
+  .moving-bar-container:hover {
+    animation-play-state: paused;
+  }
+  
+  /* Tailwind utilities for styling individual card content */
+  .moving-card {
+    min-width: 200px;  /* Optional: Prevent cards from shrinking too small */
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    padding-right: 2rem; /* Optional: Adds spacing between cards */
+  }
+
