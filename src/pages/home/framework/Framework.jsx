@@ -57,7 +57,7 @@ const Framework = () => {
                                 key={data.id}
                                 heading={data.heading}
                                 para={data.para}
-                                aos="fade-left"
+                                data-aos="fade-left"
                             />
                         ))}
                     </div>
@@ -67,7 +67,7 @@ const Framework = () => {
                                 key={data.id}
                                 heading={data.heading}
                                 para={data.para}
-                                aos="fade-left"
+                                data-aos="fade-left"
                             />
                         ))}
                     </div>

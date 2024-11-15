@@ -4,8 +4,7 @@ import RocketImg from "../assets/images/logo.png";
 const FrameworkCard = ({ heading, para, ...props }) => {
   return (
     <div className="card h-[350px] xl:h-[300px] w-full lg:w-[47%] border border-primary p-6 flex flex-col gap-16 justify-between"
-    {...props}
-    >
+    {...props} >
       <div className="flex items-start justify-between">
         <h4 className="text-subheading text-base mb-2">{heading}</h4>
         <img className="w-[45px] lg:w-[55px]" src={RocketImg} alt="RocketImg" />
