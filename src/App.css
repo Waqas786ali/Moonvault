@@ -2,12 +2,14 @@
   font-family: "PPSupplyMono-Regular";
   src: local("PPSupplyMono-Regular"),
     url("./assets/fonts/PPSupplyMono-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PPNeueBit-Regular";
   src: local("PPNeueBit-Regular"),
     url("./assets/fonts/PPNeueBit-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 body{
