@@ -46,7 +46,7 @@ const TokenOmics = () => {
                     <div className="text-para w-full lg:w-[46%] text-xl space-y-4 mb-6">
                         <p>The decentralized tokenomics of $VAULT, supported by MoonVault’s technological advancements, are designed to ensure long-term value and utility.</p>
                     </div>
-                    <div className="pl-1 flex items-center gap-4">
+                    <div className="pl-1 flex items-center gap-4 md:">
                         <SecondBtn text={"COPY ADDRESS"} />
                         <SecondBtn text={"UNSWAP"} />
                         <SecondBtn text={"DEXTOOLS"} />

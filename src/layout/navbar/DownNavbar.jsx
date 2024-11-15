@@ -17,9 +17,9 @@ const DownNavbar = () => {
   }, []);
 
   return (
-    <>
+    <div className='flex justify-between mx-auto'>
       <div
-        className={`flex justify-between items-center bg-black text-white border border-primary py-2.5 px-4 transition-all duration-300 z-50 w-full fixed left-0 ${
+        className={`flex justify-between items-center bg-black text-white border border-primary py-2.5 px-4 transition-all duration-300 z-50 w-full fixed mx-auto max-w-[1600px] ${
           isSticky ? 'top-0 shadow-lg' : 'top-[45px]'
         }`}
       >
@@ -50,7 +50,7 @@ const DownNavbar = () => {
       </div>
 
       <div
-        className={`block lg:hidden fixed top-0 left-0 right-0 bottom-0 z-50 h-screen w-full transform bg-black transition-transform ease-[cubic-bezier(0.68,_-0.55,_0.27,_1.55) ${
+        className={`max-w-[1600px] block lg:hidden fixed top-0 left-0 right-0 bottom-0 z-50 h-screen w-full transform bg-black transition-transform ease-[cubic-bezier(0.68,_-0.55,_0.27,_1.55) ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -73,7 +73,7 @@ const DownNavbar = () => {
           <Button className={"w-[90%] font-medium text-lg"} fill text={"LAUNCH dAPP"} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
