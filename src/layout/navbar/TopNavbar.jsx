@@ -1,4 +1,4 @@
-// import React from 'react';
+import Marquee from "react-fast-marquee";
 
 const cardData = [
   {
@@ -17,18 +17,28 @@ const cardData = [
 
 const TopNavbar = () => {
   return (
-    <div className="overflow-hidden h-[45px] w-full bg-black border-primary border flex items-center justify-start text-xl">
-      <div className="w-[10%] flex justify-center items-center">
-        <p className="text-para italic font-ppneuebit">Now live <span className="text-xl animate-blink">•</span></p>
+    <div className="overflow-hidden h-[45px] w-full bg-black border-primary border flex items-center text-xl">
+      {/* Fixed Section */}
+      <div className="w-[10%] min-w-[120px] flex justify-center items-center bg-black z-10">
+        <p className="text-para italic font-ppneuebit">
+          Now live <span className="text-xl animate-blink">•</span>
+        </p>
       </div>
-      <hr className="h-full border border-primary" />
-      <div className="w-[90%] flex justify-between items-center gap-10">
-        {cardData.map((card, index) => (
-          <div key={index} className="card flex items-center gap-2 whitespace-nowrap">
-            <p className="text-secondary">{card.title}</p>
-            <p className="text-para italic font-ppneuebit">{card.description}</p>
-          </div>
-        ))}
+      <hr className="h-full border border-primary overflow-hidden bg-black" />
+
+      {/* Scrolling Section */}
+      <div className="w-[90%] overflow-hidden">
+        <Marquee gradient={false} speed={50}>
+          {cardData.map((card, index) => (
+            <div
+              key={index}
+              className="card flex items-center gap-2 whitespace-nowrap mx-6"
+            >
+              <p className="text-secondary">{card.title}</p>
+              <p className="text-para italic font-ppneuebit">{card.description}</p>
+            </div>
+          ))}
+        </Marquee>
       </div>
     </div>
   );

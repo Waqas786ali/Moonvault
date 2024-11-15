@@ -7,7 +7,7 @@ const Community = () => {
     <section>
            <div className="w-[95%] md:w-[85%] mx-auto border border-primary bg-black text-white">
             <div className="px-8 py-6">
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <div>
                         <h4 className="text-subheading text-base mb-4">You’re Invited</h4>
                         <h3 className="text-heading tracking-widest text-3xl font-bold mb-6">COMMUNITY</h3>

@@ -60,12 +60,52 @@ DiscordIcon.propTypes = {
   className: PropTypes.string,
 };
 
+const RightArrow = ({ className }) => {
+  return (
+    <svg className={className} width="18" height="14" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32.2305 14.6182L15.458 27.1426V23.1143L26.0537 15.8389L25.8096 15.1797C23.9541 15.4971 21.6104 15.6924 19.6572 15.6924H0.785156V12.1279H19.6572C21.5859 12.1279 23.9297 12.3232 25.8096 12.6162L26.0537 12.0059L15.458 4.73047V0.65332L32.2305 13.2021V14.6182Z" fill="currentColor"/>
+    </svg>
+  );
+};
+
+
+RightArrow.propTypes = {
+  className: PropTypes.string,
+};
+
+const Hamburger = ({ className }) => {
+  return (
+    <svg className={className} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" fill="currentColor"/>
+    </svg>
+  );
+};
+
+
+Hamburger.propTypes = {
+  className: PropTypes.string,
+};
+
+const Xmark = ({ className }) => {
+  return (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill='currentColor' d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+  );
+};
+
+
+Xmark.propTypes = {
+  className: PropTypes.string,
+};
+
 
 const Svgs = {
   TelegramIcon,
   XIcon,
   DiscordIcon,
   MediumIcon,
+  RightArrow,
+  Hamburger,
+  Xmark,
   
 };
 

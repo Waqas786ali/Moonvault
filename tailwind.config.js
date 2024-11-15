@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '480px',
+        mxs: '380px',
+      },
       colors: {
         primary: "#6142ff",
         secondary: "#b8fd8e",
@@ -16,6 +20,16 @@ export default {
       fontFamily: {
         'ppneuebit': ['PPNeueBit-Regular', 'sans-serif'],
         'ppneuebit-mono': ['PPSupplyMono-Regular', 'sans-serif'],
+      },
+      animation: {
+        Slowspin: 'slowspin 20s linear infinite',
+        SlowOvalspin: 'slowspin 10s linear infinite',
+      },
+      keyframes: {
+        slowspin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
     },
   },
