@@ -15,7 +15,7 @@ const Community = () => {
                             <div className="text-para w-full text-xl mb-4">
                                 <p>The $VAULT token is built to drive decentralized engagement across the globe. MoonVault acts as a hub where users can connect, collaborate, and navigate their journey in the crypto space securely.</p>
                             </div>
-                            <div className="flex items-center gap-8 md:gap-12 pl-1">
+                            <div className="pl-1 flex items-center gap-8 md:gap-12">
                                 <SecondBtn text={"TELEGRAM"} />
                                 <SecondBtn text={"X/TWITTER"} />
                                 <SecondBtn text={"DISCORD"} />

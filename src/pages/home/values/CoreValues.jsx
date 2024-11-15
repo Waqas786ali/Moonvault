@@ -1,16 +1,6 @@
-import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Accordion from "../../../components/Accordion"
 
 const CoreValues = () => {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: 'ease-in-out',
-    });
-  }, []);
 
   const accordionData = [
     { id: 1, title: 'Security & Transparency', para: 'MoonVault makes sure that every transaction and procedure is safe and verifiable on the blockchain by prioritizing user confidence through strong security standards and open operations.' },

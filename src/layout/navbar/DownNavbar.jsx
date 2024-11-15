@@ -16,6 +16,16 @@ const DownNavbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <div className='flex justify-between mx-auto'>
       <div
@@ -34,13 +44,13 @@ const DownNavbar = () => {
         </div>
         <div className='hidden lg:flex items-center gap-14'>
           <ul className='flex items-center gap-12 text-base uppercase'>
-            <li><a href="#ABOUT">About</a></li>
-            <li><a href="#BLUEPRINT">Blueprint</a></li>
-            <li><a href="#TOKENOMICS">Tokenomics</a></li>
-            <li><a href="#OVERVIEW">Starr</a></li>
-            <li><a href="#FRAMEWORK">Framework</a></li>
-            <li><a href="#COREVALUES">Core Values</a></li>
-            <li><a href="#FAQS">FAQ&#39;<small>s</small></a></li>
+            <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('ABOUT'); }}>About</a></li>
+            <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('BLUEPRINT'); }}>Blueprint</a></li>
+            <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('TOKENOMICS'); }}>Tokenomics</a></li>
+            <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('OVERVIEW'); }}>Starr</a></li>
+            <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('FRAMEWORK'); }}>Framework</a></li>
+            <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('COREVALUES'); }}>Core Values</a></li>
+            <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('FAQS'); }}>FAQ&#39;<small>s</small></a></li>
           </ul>
           <div className='flex items-center gap-4'>
             <Button text={"BUY $VAULT"} />

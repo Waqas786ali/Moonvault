@@ -15,7 +15,7 @@ const Clients = () => {
   const bar2Images = [Bar2Img1, Bar2Img2, Bar2Img3, Bar2Img4, Bar2Img5];
 
   return (
-    <section id='CLIENTS' className="py-10 overflow-hidden ">
+    <section id='CLIENTS' className="py-10 mt-10 overflow-hidden ">
 
       <div className="flex flex-col gap-8">
         {/* First Row */}

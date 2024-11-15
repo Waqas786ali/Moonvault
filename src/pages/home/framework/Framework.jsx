@@ -1,17 +1,7 @@
-import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import SecondBtn from "../../../components/SecondBtn"
 import FrameworkCard from "../../../components/FrameworkCard";
 
 const Framework = () => {
-
-    useEffect(() => {
-        AOS.init({
-          duration: 500,
-          easing: 'ease-in-out',
-        });
-      }, []);
 
     const frameworkData1 = [
         {
@@ -46,7 +36,7 @@ const Framework = () => {
                     <div className="text-para w-full lg:w-[46%] text-xl space-y-4 mb-6">
                         <p>Discover the power of MoonVault’s advanced Telegram Bots and automated systems, designed to enhance your experience:</p>
                     </div>
-                    <div className="pl-1">
+                    <div className="pl-1 flex items-center gap-8 md:gap-12">
                         <SecondBtn text={"MEDIUM"} />
                     </div>
                 </div>

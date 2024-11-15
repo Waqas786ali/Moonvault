@@ -1,16 +1,6 @@
-import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Accordion from "../../../components/Accordion"
 
 const BluePrint = () => {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: 'ease-in-out',
-    });
-  }, []);
 
   const accordionData = [
     { id: 1, title: 'Innovative Technology', para: 'MoonVault leverages the latest in blockchain and financial tools to create a powerful and intuitive platform, ensuring users benefit from cutting-edge advancements across sectors.' },

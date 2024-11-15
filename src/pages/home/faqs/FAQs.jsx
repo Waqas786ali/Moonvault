@@ -1,17 +1,7 @@
-import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Accordion from "../../../components/Accordion"
 
 
 const FAQs = () => {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: 'ease-in-out',
-    });
-  }, []);
 
   const accordionData = [
     { id: 1, title: 'Do I have to wait for my dividends to be distributed?', para: '$VAULT rewards are available to claim every 15 minutes (since last claim), and buying, selling, or transferring $VAULT will automatically claim rewards.MoonVault funds an iterative script which processes $VAULT holder rewards randomly free of charge.' },

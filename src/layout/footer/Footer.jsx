@@ -2,6 +2,17 @@ import Logo from "../../assets/images/logo.png";
 import Svgs from "../../components/Svgs";
 
 const Footer = () => {
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <footer className="py-8">
       <div className="w-[95%] md:w-[85%] mx-auto border border-primary bg-gradient-to-t from-[#00002f] to-transparent text-white">
@@ -22,45 +33,46 @@ const Footer = () => {
                 <div className="w-full lg:w-[65%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:justify-items-center gap-6 md:gap-4">
                     <div>
                         <h4 className="text-subheading text-base mb-2 md:mb-4 uppercase">MoonVault</h4>
-                        <ul className='flex flex-col gap-2 text-[1.2rem] text-white'>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Blueprint</a></li>
-                          <li><a href="#">Tokenomics</a></li>
-                          <li><a href="#">Starr</a></li>
-                          <li><a href="#">Framework</a></li>
-                          <li><a href="#">Core Values</a></li>
-                          <li><a href="#">FAQ&#39;s</a></li>
+                        <ul className='flex flex-col gap-2 text-[1.1rem] text-white'>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('HOME'); }}>Home</a></li>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('ABOUT'); }}>About</a></li>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('BLUEPRINT'); }}>Blueprint</a></li>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('TOKENOMICS'); }}>Tokenomics</a></li>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('OVERVIEW'); }}>Starr</a></li>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('FRAMEWORK'); }}>Framework</a></li>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('COREVALUES'); }}>Core Values</a></li>
+                          <li className='hover:text-secondary'><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('FAQS'); }}>FAQ&#39;<small>s</small></a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-subheading text-base mb-2 md:mb-4 uppercase">MoonVault</h4>
-                        <ul className='flex flex-col gap-2 text-[1.2rem] text-white'>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Blueprint</a></li>
-                          <li><a href="#">Tokenomics</a></li>
-                          <li><a href="#">Starr</a></li>
-                          <li><a href="#">Framework</a></li>
-                          <li><a href="#">Core Values</a></li>
+                        <h4 className="text-subheading text-base mb-2 md:mb-4 uppercase">$VAULT</h4>
+                        <ul className='flex flex-col gap-2 text-[1.1rem] text-white'>
+                          <li className="hover:text-secondary"><a href="https://www.dextools.io/app/en/token/vault1?t=1731683119893" target="_blank">DEX Tools</a></li>
+                          <li className="hover:text-secondary"><a href="https://dexscreener.com/ethereum/0x220125af9da649e368813733ec8702a4145f996b" target="_blank">DEX Screener</a></li>
+                          <li className="hover:text-secondary"><a href="#" target="_blank">Gecko Terminal</a></li>
+                          <li className="hover:text-secondary"><a href="https://etherscan.io/address/0x220125af9da649e368813733ec8702a4145f996b" target="_blank">Etherscan</a></li>
+                          <li className="hover:text-secondary"><a href="#" target="_blank">CoinMarketCap (soon)</a></li>
+                          <li className="hover:text-secondary"><a href="#" target="_blank">Coin Gecko (soon)</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-subheading text-base mb-2 md:mb-4 uppercase">MoonVault</h4>
-                        <ul className='flex flex-col gap-2 text-[1.2rem] text-white'>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Framework</a></li>
-                          <li><a href="#">Core Values</a></li>
-                          <li><a href="#">FAQ&#39;s</a></li>
+                        <h4 className="text-subheading text-base mb-2 md:mb-4 uppercase">TELEGRAM BOTS</h4>
+                        <ul className='flex flex-col gap-2 text-[1.1rem] text-white'>
+                          <li className="hover:text-secondary"><a href="https://app.moonvault.io/" target="_blank">$VAULT RewardsBot</a></li>
+                          <li className="hover:text-secondary"><a href="https://app.moonvault.io/" target="_blank">$VAULT StatsBot</a></li>
+                          <li className="hover:text-secondary"><a href="https://app.moonvault.io/" target="_blank">Core Values</a></li>
+                          <li className="hover:text-secondary"><a href="https://app.moonvault.io/" target="_blank">$VAULT BuyBot</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-subheading text-base mb-2 md:mb-4 uppercase">MoonVault</h4>
-                        <ul className='flex flex-col gap-2 text-[1.2rem] text-white'>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Blueprint</a></li>
-                          <li><a href="#">Tokenomics</a></li>
-                          <li><a href="#">Starr</a></li>
-                          <li><a href="#">Framework</a></li>
+                        <h4 className="text-subheading text-base mb-2 md:mb-4 uppercase">HELPFUL LINKS</h4>
+                        <ul className='flex flex-col gap-2 text-[1.1rem] text-white'>
+                          <li className="hover:text-secondary"><a href="https://app.moonvault.io/" target="_blank">Launch DAPP</a></li>
+                          <li className="hover:text-secondary"><a href="https://app.uniswap.org/explore/tokens/ethereum/0x220125af9da649e368813733ec8702a4145f996b" target="_blank">BUY $VAULT</a></li>
+                          <li className="hover:text-secondary"><a href="https://moonvault.io/moon-vault_wp.pdf" target="_blank">WhitePaper</a></li>
+                          <li className="hover:text-secondary"><a href="#">GitBook (soon)</a></li>
+                          <li className="hover:text-secondary"><a href="https://github.com/MoonVaultETH" target="_blank">GitHub</a></li>
+                          <li className="hover:text-secondary"><a href="#">Email</a></li>
                         </ul>
                     </div>
                 </div>

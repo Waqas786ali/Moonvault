@@ -14,7 +14,7 @@ import Community from './community/Community'
 
 const Home = () => {
   return (
-    <main>
+    <main id='HOME'>
         <Header />
         <About />
         <Clients />
