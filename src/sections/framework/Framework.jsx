@@ -27,7 +27,7 @@ const Framework = () => {
         }
     ];
   return (
-    <section>
+    <section id='FRAMEWORK'>
             <div className="w-[95%] sm:w-[85%] mx-auto py-10">
                 <div className="fle-4 py-4">
                     <h4 className="text-subheading text-base mb-4">/  FRAMEWORK</h4>

@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "PPSupplyMono-Regular";
+  src: local("PPSupplyMono-Regular"),
+    url("./assets/fonts/PPSupplyMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PPNeueBit-Regular";
+  src: local("PPNeueBit-Regular"),
+    url("./assets/fonts/PPNeueBit-Regular.ttf") format("truetype");
+}
+
+body{
+  background: #000;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+@media screen and (max-width:550px){
+body{
+  font-size: 15px;
+}
+}
+
+button, p, span, a{
+  font-family: "PPNeueBit-Regular", sans-serif;
+}
+
+h3,h4{
+font-family: "PPSupplyMono-Regular", sans-serif;
+}
+
 
 /* SCROLL BAR */
 /* ========================== */
@@ -48,38 +84,6 @@
   right: -5px;
 }
 
-
-
-  @font-face {
-    font-family: "PPSupplyMono-Regular";
-    src: local("PPSupplyMono-Regular"),
-      url("./assets/fonts/PPSupplyMono-Regular.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "PPNeueBit-Regular";
-    src: local("PPNeueBit-Regular"),
-      url("./assets/fonts/PPNeueBit-Regular.ttf") format("truetype");
-  }
-
-body{
-    background: #000;
-    overflow-x: hidden;
-}
-
-@media screen and (max-width:550px){
-  body{
-    font-size: 15px;
-  }
-}
-
-button, p, span, a{
-    font-family: "PPNeueBit-Regular", sans-serif;
-  }
-  
-h3,h4{
-  font-family: "PPSupplyMono-Regular", sans-serif;
-}
 
 @keyframes blink {
   0%, 100% {
@@ -170,29 +174,3 @@ h3,h4{
   }
   
 }
-
-
-
-/* TopNavbar.css */
-
-/* Custom animation for continuous right-to-left movement */
-@keyframes moveBar {
-    0% {
-      transform: translateX(100%); /* Start from the right */
-    }
-    100% {
-      transform: translateX(-100%); /* End at the left */
-    }
-  }
-  
-  /* Add custom animation to Tailwind using animation classes */
-  .moving-bar-container {
-    animation: moveBar 10s linear infinite; /* Continuously move the bar */
-  }
-  
-  /* Optional: Apply hover effect to pause animation */
-  .moving-bar-container:hover {
-    animation-play-state: paused;
-  }
-  
-

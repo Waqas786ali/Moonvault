@@ -8,7 +8,7 @@ const FAQs = () => {
     { id: 3, title: 'Do I have to claim LP rewards?', para: "No, rewards for liquidity providers are automatic and decentralized through the Liquidity Infusion process. There is no need to manually claim them. A Helper contract is deployed alongside $VAULT to allow smooth addition and removal of liquidity via smart contract or dApp." },
   ];
   return (
-    <section>
+    <section id='FAQS'>
       <div className="flex-col lg:flex lg:flex-row w-[95%] sm:w-[85%] mx-auto py-10">
           <div className="lg:w-[25%] pb-5 lg:pb-0">
             <h4 className="text-subheading text-base mb-4">/ FAQ &#39; S</h4>

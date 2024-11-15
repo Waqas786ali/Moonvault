@@ -4,7 +4,7 @@ import socialSectionEarth from "../../assets/images/socialSectionEarth.jpg"
 
 const Community = () => {
   return (
-    <section>
+    <section id='COMMUNITY'>
            <div className="w-[95%] md:w-[85%] mx-auto border border-primary bg-black text-white">
             <div className="px-8 py-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">

@@ -28,7 +28,7 @@ const Services = () => {
     ];
 
     return (
-        <section>
+        <section id="SERVICES">
             <div className="w-[95%] sm:w-[85%] mx-auto py-10">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 sm:px-[10%] md:px-[20%] lg:px-0">
                     {servicesData.map((data) => (

@@ -4,7 +4,7 @@ import gifComputers from '../../assets/videos/gifComputers.gif';
 
 const Header = () => {
   return (
-    <section className='relative h-screen w-[1600px] mt-16'>
+    <section id='HEADER' className='relative h-screen w-[1600px] mt-16'>
       <div 
         className="moonBaseEarth absolute left-0 h-full w-full" 
         style={{

@@ -6,7 +6,7 @@ const Overview = () => {
     
     const isMobile = window.innerWidth <= 1023;
   return (
-    <section>
+    <section id='OVERVIEW'>
         <div className="w-[95%] sm:w-[85%] mx-auto h-full py-[15%] pb-[15%] star_img"
            style={
             !isMobile

@@ -8,7 +8,7 @@ const BluePrint = () => {
     { id: 3, title: 'Sustainable Growth', para: "MoonVault’s commitment to long-term value is reflected in its support of $VAULT's decentralized tokenomics, designed to foster enduring utility and growth within the ecosystem." },
   ];
   return (
-    <section>
+    <section id='BLUEPRINT'>
       <div className="flex-col lg:flex lg:flex-row w-[95%] sm:w-[85%] mx-auto py-10">
           <div className="lg:w-[25%] pb-5 lg:pb-0">
             <h4 className="text-subheading text-base mb-4">/ BLUEPRINT</h4>

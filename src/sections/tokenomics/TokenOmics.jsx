@@ -38,7 +38,7 @@ const TokenOmics = () => {
     ];
  
   return (
-    <section>
+    <section id="TOKENOMICS">
             <div className="w-[95%] sm:w-[85%] mx-auto py-10">
                 <div className="py-4">
                     <h4 className="text-subheading text-base mb-4">/ TOKENOMICS</h4>

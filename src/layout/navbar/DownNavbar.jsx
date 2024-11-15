@@ -34,13 +34,13 @@ const DownNavbar = () => {
         </div>
         <div className='hidden lg:flex items-center gap-14'>
           <ul className='flex items-center gap-12 text-base uppercase'>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blueprint</a></li>
-            <li><a href="#">Tokenomics</a></li>
-            <li><a href="#">Starr</a></li>
-            <li><a href="#">Framework</a></li>
-            <li><a href="#">Core Values</a></li>
-            <li><a href="#">FAQ&#39;<small>s</small></a></li>
+            <li><a href="#ABOUT">About</a></li>
+            <li><a href="#BLUEPRINT">Blueprint</a></li>
+            <li><a href="#TOKENOMICS">Tokenomics</a></li>
+            <li><a href="#OVERVIEW">Starr</a></li>
+            <li><a href="#FRAMEWORK">Framework</a></li>
+            <li><a href="#COREVALUES">Core Values</a></li>
+            <li><a href="#FAQS">FAQ&#39;<small>s</small></a></li>
           </ul>
           <div className='flex items-center gap-4'>
             <Button text={"BUY $VAULT"} />
@@ -60,13 +60,13 @@ const DownNavbar = () => {
           </button>
         </div>
         <ul className="flex flex-col items-center gap-0 mt-10 text-lg uppercase text-white w-full">
-          <li className='w-full'><a href="#" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>About</a></li>
-          <li className='w-full'><a href="#" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Blueprint</a></li>
-          <li className='w-full'><a href="#" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Tokenomics</a></li>
-          <li className='w-full'><a href="#" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Starr</a></li>
-          <li className='w-full'><a href="#" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Framework</a></li>
-          <li className='w-full'><a href="#" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Core Values</a></li>
-          <li className='w-full'><a href="#" className='mx-auto py-4 flex justify-center items-center border-y border-y-primary w-[90%] text-center'>FAQ&#39;s</a></li>
+          <li className='w-full'><a href="#ABOUT" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>About</a></li>
+          <li className='w-full'><a href="#BLUEPRINT" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Blueprint</a></li>
+          <li className='w-full'><a href="#TOKENOMICS" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Tokenomics</a></li>
+          <li className='w-full'><a href="#OVERVIEW" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Starr</a></li>
+          <li className='w-full'><a href="#FRAMEWORK" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Framework</a></li>
+          <li className='w-full'><a href="#COREVALUES" className='mx-auto py-4 flex justify-center items-center border-t border-t-primary w-[90%] text-center'>Core Values</a></li>
+          <li className='w-full'><a href="#FAQS" className='mx-auto py-4 flex justify-center items-center border-y border-y-primary w-[90%] text-center'>FAQ&#39;s</a></li>
         </ul>
         <div className='flex flex-col items-center gap-2 mt-4'>
           <Button className={"w-[90%] font-medium text-lg"} text={"BUY $VAULT"} />

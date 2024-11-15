@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <section>
+    <section id='ABOUT'>
       <div className="w-[95%] sm:w-[85%] py-10 mx-auto">
         <h4 className="text-subheading text-base mb-4">/ ABOUT MOONVAULT</h4>
         <h3 className="text-heading tracking-widest text-2xl sm:text-3xl font-bold mb-6">POWERED BY S.T.A.R.R.</h3>

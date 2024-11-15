@@ -8,7 +8,7 @@ const CoreValues = () => {
     { id: 3, title: 'Balanced Measures', para: "MoonVault strives to separate it’s centralized supportive nature of $VAULT from the decentralized nature of the $VAULT token. The MoonVault project and the $VAULT token maintain a harmoniously balanced distinction." },
   ];
   return (
-    <section>
+    <section id="COREVALUES">
       <div className="flex-col lg:flex lg:flex-row w-[95%] sm:w-[85%] mx-auto py-10">
           <div className="lg:w-[25%] pb-5 lg:pb-0">
             <h4 className="text-subheading text-base mb-4">/ CORE VALUES</h4>
