@@ -1,14 +1,14 @@
 import Marquee from "react-fast-marquee";
-import Bar1Img1 from "../../assets/images/gecko-terminal.svg";
-import Bar1Img2 from "../../assets/images/dextools.svg";
-import Bar1Img3 from "../../assets/images/uniswap.svg";
-import Bar1Img4 from "../../assets/images/dexCleaner.svg";
-import Bar1Img5 from "../../assets/images/coinGecko.svg";
-import Bar2Img1 from "../../assets/images/hostinger.svg";
-import Bar2Img2 from "../../assets/images/metaMask.svg";
-import Bar2Img3 from "../../assets/images/infura.svg";
-import Bar2Img4 from "../../assets/images/etherScan.svg";
-import Bar2Img5 from "../../assets/images/CoinMarketCap.svg";
+import Bar1Img1 from "../../../assets/images/gecko-terminal.svg";
+import Bar1Img2 from "../../../assets/images/dextools.svg";
+import Bar1Img3 from "../../../assets/images/uniswap.svg";
+import Bar1Img4 from "../../../assets/images/dexCleaner.svg";
+import Bar1Img5 from "../../../assets/images/coinGecko.svg";
+import Bar2Img1 from "../../../assets/images/hostinger.svg";
+import Bar2Img2 from "../../../assets/images/metaMask.svg";
+import Bar2Img3 from "../../../assets/images/infura.svg";
+import Bar2Img4 from "../../../assets/images/etherScan.svg";
+import Bar2Img5 from "../../../assets/images/CoinMarketCap.svg";
 
 const Clients = () => {
   const bar1Images = [Bar1Img1, Bar1Img2, Bar1Img3, Bar1Img4, Bar1Img5];

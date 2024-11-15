@@ -1,6 +1,6 @@
-import StarEngineBG from "../../assets/images/star-engine-bg.svg"
-import Earth from "../../assets/images/earth.svg"
-import ThreePlanes from "../../assets/images/overview-three-planes-two.png"
+import StarEngineBG from "../../../assets/images/star-engine-bg.svg"
+import Earth from "../../../assets/images/earth.svg"
+import ThreePlanes from "../../../assets/images/overview-three-planes-two.png"
 
 const Overview = () => {
     

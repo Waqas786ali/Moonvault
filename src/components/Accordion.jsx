@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types'; 
 import Svgs from './Svgs';
 
-const Accordion = ({ index,title,para,children }) => {
+const Accordion = ({ index,title,para,children, ...props }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -10,7 +10,7 @@ const Accordion = ({ index,title,para,children }) => {
   };
 
   return (
-    <div className="last:border-b border-t border-primary text-white p-4 py-8 my-2 flex items-start justify-between gap-5 cursor-pointer" onClick={toggleAccordion}>
+    <div className="last:border-b border-t border-primary text-white p-4 py-8 my-2 flex items-start justify-between gap-5 cursor-pointer" onClick={toggleAccordion} {...props}>
        <div className='flex items-start gap-5'>
             <div className='font-semibold'>
                 <h3>{(index<10)&&`0${index}`}</h3>

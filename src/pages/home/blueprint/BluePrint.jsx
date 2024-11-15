@@ -1,7 +1,17 @@
-import Accordion from "../../components/Accordion"
-
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Accordion from "../../../components/Accordion"
 
 const BluePrint = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   const accordionData = [
     { id: 1, title: 'Innovative Technology', para: 'MoonVault leverages the latest in blockchain and financial tools to create a powerful and intuitive platform, ensuring users benefit from cutting-edge advancements across sectors.' },
     { id: 2, title: 'Integrated Experience', para: 'By supporting the $VAULT token, MoonVault combines decentralized rewards with advanced financial solutions, providing a seamless and enhanced on-chain experience.' },
@@ -20,6 +30,7 @@ const BluePrint = () => {
                 index={item.id}
                 title={item.title}
                 para={item.para}
+                data-aos="fade-left"
               />
             ))}
           </div>

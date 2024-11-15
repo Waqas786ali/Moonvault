@@ -1,6 +1,6 @@
-import heroSection from '../../assets/images/heroSection.png';
-import moonBaseEarth from '../../assets/images/moonbase-earth.png';
-import gifComputers from '../../assets/videos/gifComputers.gif';
+import heroSection from '../../../assets/images/heroSection.png';
+import moonBaseEarth from '../../../assets/images/moonbase-earth.png';
+import gifComputers from '../../../assets/videos/gifComputers.gif';
 
 const Header = () => {
   return (

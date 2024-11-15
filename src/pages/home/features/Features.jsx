@@ -1,4 +1,4 @@
-import overiewCard from "../../assets/images/overiew-card.svg";
+import overiewCard from "../../../assets/images/overiew-card.svg";
 
 const Features = () => {
     const featureData = [

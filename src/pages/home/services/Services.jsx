@@ -1,6 +1,6 @@
-import Service1Video from "../../assets/videos/lp.mp4";
-import Service2Video from "../../assets/videos/reflect.mp4";
-import Service3Video from "../../assets/videos/burn.mp4";
+import Service1Video from "../../../assets/videos/lp.mp4";
+import Service2Video from "../../../assets/videos/reflect.mp4";
+import Service3Video from "../../../assets/videos/burn.mp4";
 
 const Services = () => {
     const servicesData = [

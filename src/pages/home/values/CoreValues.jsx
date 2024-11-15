@@ -1,7 +1,17 @@
-import Accordion from "../../components/Accordion"
-
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Accordion from "../../../components/Accordion"
 
 const CoreValues = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   const accordionData = [
     { id: 1, title: 'Security & Transparency', para: 'MoonVault makes sure that every transaction and procedure is safe and verifiable on the blockchain by prioritizing user confidence through strong security standards and open operations.' },
     { id: 2, title: 'Community-Driven Innovation', para: 'By fostering a collaborative ecosystem where community feedback and input drives ongoing platform development, MoonVault gives users the power to influence how decentralized finance is developed in the future.' },
@@ -20,6 +30,7 @@ const CoreValues = () => {
                 index={item.id}
                 title={item.title}
                 para={item.para}
+                data-aos="fade-left"
               />
             ))}
           </div>

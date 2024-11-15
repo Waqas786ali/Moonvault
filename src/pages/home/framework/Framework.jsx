@@ -1,7 +1,18 @@
-import RocketImg from "../../assets/images/logo.png"
-import SecondBtn from "../../components/SecondBtn"
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import SecondBtn from "../../../components/SecondBtn"
+import FrameworkCard from "../../../components/FrameworkCard";
 
 const Framework = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 500,
+          easing: 'ease-in-out',
+        });
+      }, []);
+
     const frameworkData1 = [
         {
             id: 1,
@@ -42,28 +53,22 @@ const Framework = () => {
                 <div className="flex flex-col gap-8 py-10">
                     <div className="flex flex-col lg:flex-row items-center justify-start gap-4">
                         {frameworkData1?.map((data) => (
-                            <div key={data.id} className="card h-[350px] xl:h-[300px] w-full lg:w-[47%] border border-primary p-6 flex flex-col gap-16 justify-between">
-                                <div className="flex items-start justify-between">
-                                    <h4 className="text-subheading text-base mb-2">{data.heading}</h4>
-                                    <img className="w-[45px] lg:w-[55px]" src={RocketImg} alt="RocketImg" />
-                                </div>
-                                <div className="text-para w-full text-xl space-y-4">
-                                    <p>{data.para}</p>
-                                </div>
-                            </div>
+                            <FrameworkCard
+                                key={data.id}
+                                heading={data.heading}
+                                para={data.para}
+                                aos="fade-left"
+                            />
                         ))}
                     </div>
                     <div className="flex flex-col lg:flex-row items-center justify-end gap-4">
                         {frameworkData2?.map((data) => (
-                            <div key={data.id} className="card h-[350px] xl:h-[300px] w-full lg:w-[47%] border border-primary p-6 flex flex-col gap-16 justify-between">
-                                <div className="flex items-start justify-between">
-                                    <h4 className="text-subheading text-base mb-2">{data.heading}</h4>
-                                    <img className="w-[45px] lg:w-[55px]" src={RocketImg} alt="RocketImg" />
-                                </div>
-                                <div className="text-para w-full text-xl space-y-4">
-                                    <p>{data.para}</p>
-                                </div>
-                            </div>
+                            <FrameworkCard
+                                key={data.id}
+                                heading={data.heading}
+                                para={data.para}
+                                aos="fade-left"
+                            />
                         ))}
                     </div>
                 </div>

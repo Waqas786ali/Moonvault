@@ -1,8 +1,8 @@
 
 
-import SecondBtn from "../../components/SecondBtn";
-import Oval1 from "../../assets/images/ovaal1.png";
-import Oval2 from "../../assets/images/ovaal2.png";
+import SecondBtn from "../../../components/SecondBtn";
+import Oval1 from "../../../assets/images/ovaal1.png";
+import Oval2 from "../../../assets/images/ovaal2.png";
 
 const TokenOmics = () => {
 
