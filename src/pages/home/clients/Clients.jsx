@@ -15,32 +15,33 @@ const Clients = () => {
   const bar2Images = [Bar2Img1, Bar2Img2, Bar2Img3, Bar2Img4, Bar2Img5];
 
   return (
-    <section id='CLIENTS' className="py-10 mt-10 overflow-hidden ">
+    <section id='CLIENTS'>
+      <div className="py-10 mt-10 overflow-hidden">
+        <div className="flex flex-col gap-8">
+          {/* First Row */}
+          <Marquee gradient={false} speed={50}>
+            {[...bar1Images, ...bar1Images].map((src, index) => (
+              <div
+                key={index}
+                className="h-16 w-[250px] mx-4 flex-shrink-0 rounded-xl border border-[#6142FF] py-3 px-6 flex justify-center items-center"
+              >
+                <img className="w-[80%] sm:w-full" src={src} alt={`Bar1Img${index + 1}`} />
+              </div>
+            ))}
+          </Marquee>
 
-      <div className="flex flex-col gap-8">
-        {/* First Row */}
-        <Marquee gradient={false} speed={50}>
-          {[...bar1Images, ...bar1Images].map((src, index) => (
-            <div
-              key={index}
-              className="h-16 w-[250px] mx-4 flex-shrink-0 rounded-xl border border-[#6142FF] py-3 px-6 flex justify-center items-center"
-            >
-              <img className="w-[80%] sm:w-full" src={src} alt={`Bar1Img${index + 1}`} />
-            </div>
-          ))}
-        </Marquee>
-
-        {/* Second Row (Reverse Direction) */}
-        <Marquee gradient={false} speed={50} direction="right">
-          {[...bar2Images, ...bar2Images].map((src, index) => (
-            <div
-              key={index}
-              className="h-16 w-[250px] mx-4 flex-shrink-0 rounded-xl border border-[#6142FF] flex justify-center items-center px-6 py-3"
-            >
-              <img className="w-[80%] sm:w-full" src={src} alt={`Bar2Img${index + 1}`} />
-            </div>
-          ))}
-        </Marquee>
+          {/* Second Row (Reverse Direction) */}
+          <Marquee gradient={false} speed={50} direction="right">
+            {[...bar2Images, ...bar2Images].map((src, index) => (
+              <div
+                key={index}
+                className="h-16 w-[250px] mx-4 flex-shrink-0 rounded-xl border border-[#6142FF] flex justify-center items-center px-6 py-3"
+              >
+                <img className="w-[80%] sm:w-full" src={src} alt={`Bar2Img${index + 1}`} />
+              </div>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </section>
   );
